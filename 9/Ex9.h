@@ -16,8 +16,8 @@ private:
 
 class Apartment:public Property
 {
-private:
-	double wth;
+
+	
 public:
 	Apartment(double wth);
 	double tax() override;
@@ -26,8 +26,7 @@ public:
 
 class Car :public Property
 {
-private:
-	double wth;
+
 public:
 	Car(double wth);
 	double tax() override;
@@ -36,14 +35,10 @@ public:
 
 class CountryHouse :public Property
 {
-private:
-	double wth;
+
 public:
 	CountryHouse(double wth);
 	double tax() override;
 	~CountryHouse();
 };
-
-
-
 #endif
