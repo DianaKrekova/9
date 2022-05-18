@@ -1,13 +1,13 @@
 #include "Ex9.h"
 
-Property::Property()
+Property::Property() : worth(0)
 {
-	worth = 0.0;
+	//worth = 0.0;
 }
 
-Property::Property(double wth)
+Property::Property(double wth) : worth(wth)
 {
-	worth = wth;
+
 }
 
 double Property::get_worth()
@@ -36,7 +36,7 @@ Apartment::~Apartment()
 {
 }
 
-Car::Car(double wth):Property(wth)
+Car::Car(double wth): Property(wth)
 {
 }
 
